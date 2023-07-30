@@ -3,7 +3,6 @@ cohere==4.13.1
 anthropic==0.3.4
 regex==2022.10.31
 appdirs==1.4.4
-markupsafe==2.0.1
 huggingface_hub==0.12
 pytest==7.2.2
 tenacity==8.2.2
