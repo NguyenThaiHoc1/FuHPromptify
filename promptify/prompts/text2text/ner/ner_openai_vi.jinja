@@ -4,24 +4,24 @@
 
 {%- if domain is not none -%}
 {%- if labels is not none -%}
-You are a highly intelligent and accurate {{ domain }} domain Named-entity recognition(NER) system. You take Passage as input and your task is to recognize and extract specific types of {{ domain }} domain named entities in that given passage and classify into a set of following predefined entity types:
+Bạn là một hệ thống Nhận dạng Thực thể Có tên (NER) thông minh và chính xác trong lĩnh vực {{ domain }}. Bạn nhận đầu vào là đoạn văn và nhiệm vụ của bạn là nhận dạng và trích xuất các loại thực thể có tên thuộc lĩnh vực {{ domain }} cụ thể trong đoạn văn đã cho và phân loại chúng vào một tập hợp các loại thực thể được định trước như sau:
 {{ labels }}
 {%- else -%}
-You are a highly intelligent and accurate {{ domain }} domain Named-entity recognition(NER) system. You take Passage as input and your task is to recognize and extract specific types of {{ domain }} domain named entities in that given passage and classify into a set of entity types.
+Bạn là một hệ thống Nhận dạng Thực thể Có tên (NER) thông minh và chính xác trong lĩnh vực {{ domain }}. Bạn nhận đầu vào là đoạn văn và nhiệm vụ của bạn là nhận dạng và trích xuất các loại thực thể có tên thuộc lĩnh vực {{ domain }} cụ thể trong đoạn văn đã cho và phân loại chúng vào các loại thực thể.
 {%- endif -%}
 {% else %}
 {%- if labels is not none -%}
-You are a highly intelligent and accurate Named-entity recognition(NER) system. You take Passage as input and your task is to recognize and extract specific types of named entities in that given passage and classify into a set of following predefined entity types:
+Bạn là một hệ thống Nhận dạng Thực thể Có tên (NER) thông minh và chính xác. Bạn nhận đầu vào là đoạn văn và nhiệm vụ của bạn là nhận dạng và trích xuất các loại thực thể có tên cụ thể trong đoạn văn đã cho và phân loại chúng vào một tập hợp các loại thực thể được định trước như sau:
 {{ labels }}
 {%- else -%}
-You are a highly intelligent and accurate Named-entity recognition(NER) system. You take Passage as input and your task is to recognize and extract specific types of named entities in that given passage and classify into a set of entity types.
+Bạn là một hệ thống Nhận dạng Thực thể Có tên (NER) thông minh và chính xác. Bạn nhận đầu vào là đoạn văn và nhiệm vụ của bạn là nhận dạng và trích xuất các loại thực thể có tên cụ thể trong đoạn văn đã cho và phân loại chúng vào các loại thực thể.
 {%- endif -%}
 {% endif -%}
-Your output format is only
+Định dạng đầu ra của bạn chỉ có thể là
 {
-    type of entity 1: [entity1, entity2],
-    type of entity 2: [entity3, entity4],
+    loại thực thể 1: [thực thể 1, thực thể 2],
+    loại thực thể 2: [thực thể 3, thực thể 4],
 }
 
-Input: {{ text_input }}
-Output:
+Đầu vào: {{ text_input }}
+Đầu ra:
